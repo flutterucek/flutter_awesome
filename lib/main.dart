@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_awesome/app_bar.dart';
+import 'package:flutter_awesome/cycle_card.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,27 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar(title: Text('Flutter Awesome'),),
-        body: Stack(
-          children: <Widget>[
-            Center(
-              child: Container(
-                  height: 200,
-                width: 200,
-                color: Colors.red,
-
-              ),
+        backgroundColor: Colors.white,
+        body: SafeArea(
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                CustomAppBar(),
+                CycleCard()
+              ],
             ),
-            Positioned(
-              top: 20,
-              right: 20,
-              child: Container(
-                height: 100,
-                width: 100,
-                color: Colors.blue,
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );
