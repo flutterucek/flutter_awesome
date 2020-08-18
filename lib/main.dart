@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome/app_bar.dart';
 import 'package:flutter_awesome/cycle_card.dart';
-import 'package:flutter_awesome/edit_link.dart';
-import 'package:flutter_awesome/my_cycles.dart';
-import 'package:flutter_awesome/service_card.dart';
+import 'package:flutter_awesome/itemscard.dart';
+import 'package:flutter_awesome/bottom.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,42 +14,27 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey,
         body: SafeArea(
           child: Container(
             child: Column(
               children: <Widget>[
                 CustomAppBar(),
                 CycleCard(),
-                MyCycles(),
-                EditLink(),
-                Text(
-                  'Book a Service',
-                  style: TextStyle(
-                      color: Colors.green,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
+                Itemscard(),
+                Padding(
+                  padding: const EdgeInsets.only(
+                    right: 35,
+                  ),
+                  child: Align(
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                        'Add Bikes',
+                        style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)
+                    ),
+                  ),
                 ),
-                Row(
-                  children: <Widget>[
-                    SizedBox(width: 12,),
-                    ServiceCard(
-                      icon: Icons.directions_bus,
-                      text: 'Pedal Service',
-                    ),
-                    SizedBox(width: 12,),
-                    ServiceCard(
-                      icon: Icons.category,
-                      text: 'Regular Service',
-                    ),
-                    SizedBox(width: 12,),
-                    ServiceCard(
-                      icon: Icons.zoom_out_map,
-                      text: 'Premium Service',
-                    )
-                  ],
-                )
-
+                BottomCards(),
               ],
             ),
           ),
