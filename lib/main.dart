@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome/app_bar.dart';
 import 'package:flutter_awesome/cycle_card.dart';
+import 'package:flutter_awesome/edit_link.dart';
+import 'package:flutter_awesome/my_cycles.dart';
+import 'package:flutter_awesome/service_card.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +21,36 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 CustomAppBar(),
-                CycleCard()
+                CycleCard(),
+                MyCycles(),
+                EditLink(),
+                Text(
+                  'Book a Service',
+                  style: TextStyle(
+                      color: Colors.green,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
+                Row(
+                  children: <Widget>[
+                    SizedBox(width: 12,),
+                    ServiceCard(
+                      icon: Icons.directions_bus,
+                      text: 'Pedal Service',
+                    ),
+                    SizedBox(width: 12,),
+                    ServiceCard(
+                      icon: Icons.category,
+                      text: 'Regular Service',
+                    ),
+                    SizedBox(width: 12,),
+                    ServiceCard(
+                      icon: Icons.zoom_out_map,
+                      text: 'Premium Service',
+                    )
+                  ],
+                )
+
               ],
             ),
           ),
