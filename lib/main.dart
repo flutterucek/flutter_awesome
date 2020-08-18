@@ -22,10 +22,13 @@ class MyApp extends StatelessWidget {
               children: <Widget>[
                 CustomAppBar(),
                 CycleCard(),
+                Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 20, 3, 0)),
+
                 MyCycles(),
                 EditLink(),
                Padding(
-                padding: const EdgeInsets.only(top: 180)),
+                padding: const EdgeInsets.only(top: 160)),
                 Text(
                   'Book a Service ',
                   style: TextStyle(
