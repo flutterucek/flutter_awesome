@@ -24,6 +24,8 @@ class MyApp extends StatelessWidget {
                 CycleCard(),
                 MyCycles(),
                 EditLink(),
+               Padding(
+                padding: const EdgeInsets.only(top: 180)),
                 Text(
                   'Book a Service ',
                   style: TextStyle(
@@ -35,17 +37,17 @@ class MyApp extends StatelessWidget {
                   children: <Widget>[
                     SizedBox(width: 12,),
                     ServiceCard(
-                      icon: Icons.directions_bus,
+                      icon: Icons.build,
                       text: 'Pedal Service',
                     ),
                     SizedBox(width: 12,),
                     ServiceCard(
-                      icon: Icons.category,
+                      icon: Icons.event_available,
                       text: 'Regular Service',
                     ),
                     SizedBox(width: 12,),
                     ServiceCard(
-                      icon: Icons.zoom_out_map,
+                      icon: Icons.stars,
                       text: 'Premium Service',
                     )
                   ],

@@ -8,14 +8,22 @@ class ServiceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+
+    return  Container(
+      child: Padding(
+          padding: const EdgeInsets.fromLTRB(3, 20, 0, 0
+          ),
+          child: Container(
+
       height: 100,
       width: 100,
       decoration: BoxDecoration(
           color: Colors.blue, borderRadius: BorderRadius.circular(20)),
-      child: Column(
+         child: Column(
+
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+
           Icon(
             icon,
             size: 40,
@@ -28,9 +36,12 @@ class ServiceCard extends StatelessWidget {
             text,
             style: TextStyle(color: Colors.white),
             textAlign: TextAlign.center,
-          )
-        ],
+          ),
+            ]
+          ),
+
       ),
+    ),
     );
   }
 }
