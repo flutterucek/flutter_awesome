@@ -3,6 +3,7 @@ import 'package:flutter_awesome/app_bar.dart';
 import 'package:flutter_awesome/cycle_card.dart';
 import 'package:flutter_awesome/edit_link.dart';
 import 'package:flutter_awesome/my_cycles.dart';
+import 'package:flutter_awesome/navigation_bar.dart';
 import 'package:flutter_awesome/service_card.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
                 MyCycles(),
                 EditLink(),
                Padding(
-                padding: const EdgeInsets.only(top: 160)),
+                padding: const EdgeInsets.only(top: 130)),
                 Text(
                   'Book a Service ',
                   style: TextStyle(
@@ -54,7 +55,10 @@ class MyApp extends StatelessWidget {
                       text: 'Premium Service',
                     )
                   ],
-                )
+                ),
+                Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0)),
+                NavigationBar(),
 
               ],
             ),

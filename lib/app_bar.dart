@@ -19,6 +19,7 @@ class CustomAppBar extends StatelessWidget {
           height: 40,
           width: 40,
           child: Icon(Icons.notifications,color: Colors.yellow,),
+
         ),
         Container(
           height: 80,
