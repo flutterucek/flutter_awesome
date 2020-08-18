@@ -11,7 +11,7 @@ class CustomAppBar extends StatelessWidget {
               alignment: Alignment.centerLeft,
               height: 80,
               child: Image.network(
-                  'https://img.pngio.com/cycling-logo-road-bicycle-racing-png-clipart-bicycle-bicycle-road-bicycle-racing-png-728_726.jpg'),
+                  'https://lh3.googleusercontent.com/proxy/xE5qDq_DNHUukO65Dp2r9cKCLWhMH-2SYsPQ0JGWfINpVSahqt9CpoqKGhylxeu8MudUDmGuyJfmVP7B7bGqb2apmU7k-AFzo850BD7uZmw3UA'),
             ),
           ),
         ),
