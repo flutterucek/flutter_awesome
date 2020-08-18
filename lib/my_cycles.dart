@@ -6,8 +6,9 @@ class MyCycles extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
+
         SizedBox(width: 12,),
-        MyCycleCard('Hero Cycle'),
+        MyCycleCard('Hero Cycle',),
         SizedBox(
           width: 12,
         ),

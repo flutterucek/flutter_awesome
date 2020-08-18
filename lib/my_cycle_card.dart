@@ -15,11 +15,15 @@ class MyCycleCard extends StatelessWidget {
           height: 80,
           width: 80,
           child: ClipRRect(
-            child: Image.network('https://images6.alphacoders.com/549/549198.jpg',
-                  fit: BoxFit.fill),
+            borderRadius: BorderRadius.circular(100),
+            child: Image.network('https://thumbs.dreamstime.com/b/bike-cycle-ride-wheel-bicycle-concept-hand-drawn-bike-transport-sport-concept-sketch-isolated-vector-illustration-bike-cycle-134272133.jpg',
+                  fit: BoxFit.fitHeight),
           ),
         ),
-        Text(cycleName)
+        Text(cycleName,style: TextStyle(
+          color: Colors.white54,
+
+        ),)
       ],
     );
   }

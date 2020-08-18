@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white12,
         body: SafeArea(
           child: Container(
             child: Column(
@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
                 MyCycles(),
                 EditLink(),
                 Text(
-                  'Book a Service',
+                  'Book a Service ',
                   style: TextStyle(
-                      color: Colors.green,
+                      color: Colors.yellow,
                       fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),

@@ -9,8 +9,12 @@ class EditLink extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Icon(Icons.edit),
-            Text('Add Bike'),
+            Text('Add Bike',style: TextStyle(
+                color: Colors.white54,
+
+                ),),
             SizedBox(width: 12,)
+
           ],
         ));
   }
