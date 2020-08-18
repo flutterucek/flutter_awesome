@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_awesome/add_bike.dart';
 import 'package:flutter_awesome/app_bar.dart';
 import 'package:flutter_awesome/cycle_card.dart';
 import 'package:flutter_awesome/itemscard.dart';
@@ -22,18 +23,7 @@ class MyApp extends StatelessWidget {
                 CustomAppBar(),
                 CycleCard(),
                 Itemscard(),
-                Padding(
-                  padding: const EdgeInsets.only(
-                    right: 35,
-                  ),
-                  child: Align(
-                    alignment: Alignment.centerRight,
-                    child: Text(
-                        'Add Bikes',
-                        style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)
-                    ),
-                  ),
-                ),
+                AddBikes(),
                 BottomCards(),
               ],
             ),
