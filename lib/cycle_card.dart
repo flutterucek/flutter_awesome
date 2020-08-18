@@ -12,8 +12,8 @@ class CycleCard extends StatelessWidget {
           child: Container(
               width: MediaQuery.of(context).size.width,
               height: 120,
-              child: Image.network('https://images6.alphacoders.com/549/549198.jpg',
-                  fit: BoxFit.cover)),
+              child: Image.asset('images/deal_logo.jpg',fit: BoxFit.fill,),
+          ),
         ),
       ),
     );

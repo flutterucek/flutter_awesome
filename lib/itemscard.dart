@@ -9,29 +9,45 @@ class Itemscard extends StatelessWidget{
           padding: const EdgeInsets.all(12.0),
           child:Column(
             children: <Widget>[
-              ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Container(
-                  height: 100,
-                  width: 100,
-                  child: Image.network("https://5.imimg.com/data5/QV/JT/MY-26779310/21-gear-fat-tyre-cycle-26-27-dolphin-model-500x500.jpg", fit:BoxFit.cover),
+              Container(
+                alignment: Alignment.centerLeft,
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                    image: AssetImage('images/cycle_1.jpg')
+                  )
                 ),
               ),
-              Text('Arktos NINE7FIVE', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),)
+              Text('Mountain E Cycle',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
         ),
         Column(
           children: <Widget>[
-            ClipRRect(
-              borderRadius: BorderRadius.circular(100),
-              child: Container(
-                height: 100,
-                width: 100,
-                child: Image.network("https://5.imimg.com/data5/QV/JT/MY-26779310/21-gear-fat-tyre-cycle-26-27-dolphin-model-500x500.jpg", fit:BoxFit.cover),
+            Container(
+              alignment: Alignment.centerLeft,
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage('images/cycle_2.jpg'),
+                ),
               ),
             ),
-            Text('Blue Horse', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),)
+            Text('Road Bike XC550',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+              textAlign: TextAlign.center,
+            ),
           ],
         ),
       ],

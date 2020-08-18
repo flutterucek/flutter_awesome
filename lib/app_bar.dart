@@ -10,15 +10,14 @@ class CustomAppBar extends StatelessWidget {
             child: Container(
               alignment: Alignment.centerLeft,
               height: 80,
-              child: Image.network(
-                  'https://lh3.googleusercontent.com/proxy/xE5qDq_DNHUukO65Dp2r9cKCLWhMH-2SYsPQ0JGWfINpVSahqt9CpoqKGhylxeu8MudUDmGuyJfmVP7B7bGqb2apmU7k-AFzo850BD7uZmw3UA'),
+              child: Image.asset('images/app_logo.png')
             ),
           ),
         ),
         Container(
           height: 40,
           width: 40,
-          child: Icon(Icons.notifications,color: Colors.yellow,),
+          child: Icon(Icons.notifications,color: Colors.yellow, size: 30,),
         ),
         Container(
           height: 80,
