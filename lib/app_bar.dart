@@ -19,12 +19,18 @@ class CustomAppBar extends StatelessWidget {
         Container(
           height: 40,
           width: 40,
-          child: Icon(Icons.notifications,color: Colors.yellow, size: 30,),
+          child: Icon(Icons.notifications,
+            color: Colors.yellow,
+            size: 30,
+          ),
         ),
         Container(
           height: 80,
           width: 80,
-          child: Icon(Icons.supervised_user_circle,size: 60,),
+          child: Icon(Icons.supervised_user_circle,
+            size: 60,
+            color: Colors.grey,
+          ),
         ),
       ],
     );

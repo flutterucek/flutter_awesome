@@ -24,44 +24,47 @@ class MyApp extends StatelessWidget {
           ),
         ),
         child: Scaffold(
-        backgroundColor: const Color(0xFF383836).withOpacity(0.75),
-        body: SafeArea(
-          child: Container(
-            child: Column(
-              children: <Widget>[
-                CustomAppBar(),
-                CycleCard(),
-                Itemscard(),
-                AddBikes(),
-                Column(
+          backgroundColor: const Color(0xFF383836).withOpacity(0.75),
+          body: SingleChildScrollView(
+            child:SafeArea(
+              child: Container(
+                child: Column(
                   children: <Widget>[
-                  Padding(padding: const EdgeInsets.only(top:100, bottom: 10 ),
-                  child: Text('BOOK A SERVICE',
-                    style: TextStyle(
-                      color: Colors.yellow,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold
+                    CustomAppBar(),
+                    CycleCard(),
+                    Itemscard(),
+                    AddBikes(),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(top:100, bottom: 10 ),
+                          child: Text('BOOK A SERVICE',
+                            style: TextStyle(
+                              color: Colors.yellow,
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            ServiceRow('images/regular_service.png','Regular Service'),
+                            ServiceRow('images/repair.png','Repair'),
+                            ServiceRow('images/road.png','Road-Side Assistance'),
+                          ],
+                        ),
+                        Padding(padding: const EdgeInsets.only(bottom: 15))
+                      ],
                     ),
-                  ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      ServiceRow('images/regular_service.png','Regular Service'),
-                      ServiceRow('images/repair.png','Repair'),
-                      ServiceRow('images/road.png','Road-Side Assistance'),
-                    ],
-                  ),
-                  Padding(padding: const EdgeInsets.only(bottom: 15))  
-                  ]
+                    FinalColumn(),
+                  ],
                 ),
-                FinalColumn()
-              ],
+              ),
             ),
           ),
         ),
       ),
-    ),
     );
   }
 }
