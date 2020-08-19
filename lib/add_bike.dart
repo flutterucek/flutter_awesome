@@ -34,7 +34,7 @@ class AddBikes extends StatelessWidget {
             ),
             textAlign: TextAlign.right,
           ),
-        )
+        ),
       ],
     );
   }

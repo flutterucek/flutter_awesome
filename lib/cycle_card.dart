@@ -10,9 +10,11 @@ class CycleCard extends StatelessWidget {
         child: Card(
           elevation: 12,
           child: Container(
-              width: MediaQuery.of(context).size.width,
-              height: 120,
-              child: Image.asset('images/deal_logo.jpg',fit: BoxFit.fill,),
+            width: MediaQuery.of(context).size.width,
+            height: 120,
+            child: Image.asset('images/deal_logo.jpg',
+              fit: BoxFit.fill,
+            ),
           ),
         ),
       ),

@@ -23,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
           height: 80,
           width: 80,
           child: Icon(Icons.supervised_user_circle,size: 60,),
-        )
+        ),
       ],
     );
   }
