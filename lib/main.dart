@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         child: Scaffold(
-        backgroundColor: const Color(0xFF383836).withOpacity(0.9),
+        backgroundColor: const Color(0xFF383836).withOpacity(0.75),
         body: SafeArea(
           child: Container(
             child: Column(

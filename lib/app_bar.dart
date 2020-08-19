@@ -10,7 +10,9 @@ class CustomAppBar extends StatelessWidget {
             child: Container(
               alignment: Alignment.centerLeft,
               height: 80,
-              child: Image.asset('images/app_logo.png')
+              child: Image.asset('images/app_logo.png',
+                fit: BoxFit.cover,
+              ),
             ),
           ),
         ),
